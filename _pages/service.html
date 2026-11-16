@@ -1,0 +1,9 @@
+---
+title: Service
+permalink: /service/
+---
+{% if site.data.service.size > 0 %}
+{% include timeline-entries.html entries=site.data.service %}
+{% else %}
+<p class="empty-note">Service information will be added here.</p>
+{% endif %}

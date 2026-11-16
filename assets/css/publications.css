@@ -1,0 +1,242 @@
+
+  /* ===== Publications (scoped) + Theme vars ===== */
+  :root{
+    /* --pub-bg: #ffffff; */
+    --pub-text: #111827;
+    --pub-muted: #444444;
+    --pub-border: #e5e7eb;
+
+    --card-bg: #ffffff;
+    --card-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    --card-shadow-hover: 0 6px 18px rgba(0,0,0,0.08);
+
+    --tag-bg: #f3f4f6;
+    --tag-text: #111827;
+    --tag-venue-bg: #ecfeff;
+    --tag-venue-text: #155e75;
+    --tag-topic-bg: #eef2ff;
+    --tag-topic-text: #3730a3;
+    --tag-status-bg: #fff7ed;
+    --tag-status-text: #9a3412;
+
+    --btn-bg: #e8f0fe;          /* light blue */
+    --btn-text: #1f3a8a;        /* deep blue */
+    --btn-border: #c7d2fe;
+
+    --btn-hover-bg: #1f3a8a;
+    --btn-hover-text: #ffffff;
+    --btn-hover-border: #1f3a8a;
+
+    --link: #0f766e;
+  }
+
+  /* System dark */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --pub-bg: transparent;      /* let site background show */
+      --pub-text: #e5e7eb;
+      --pub-muted: #a3a3a3;
+      --pub-border: #243042;
+
+      --card-bg: #111827;         /* dark card */
+      --card-shadow: 0 1px 2px rgba(0,0,0,0.35);
+      --card-shadow-hover: 0 10px 26px rgba(0,0,0,0.45);
+
+      --tag-bg: #1f2937;
+      --tag-text: #e5e7eb;
+      --tag-venue-bg: #083344;
+      --tag-venue-text: #67e8f9;
+      --tag-topic-bg: #1e1b4b;
+      --tag-topic-text: #c7d2fe;
+      --tag-status-bg: #3a1f0a;
+      --tag-status-text: #fdba74;
+
+      --btn-bg: #1f2a3a;
+      --btn-text: #e5e7eb;
+      --btn-border: #39485f;
+      --btn-hover-bg: #e5e7eb;
+      --btn-hover-text: #0b1220;
+      --btn-hover-border: #e5e7eb;
+
+      --link: #5eead4;
+    }
+  }
+
+  /* Manual toggle support (common in themes) */
+  html[data-theme="dark"],
+  html.dark,
+  body.dark{
+    --pub-bg: transparent;
+    --pub-text: #e5e7eb;
+    --pub-muted: #a3a3a3;
+    --pub-border: #243042;
+
+    --card-bg: #111827;
+    --card-shadow: 0 1px 2px rgba(0,0,0,0.35);
+    --card-shadow-hover: 0 10px 26px rgba(0,0,0,0.45);
+
+    --tag-bg: #1f2937;
+    --tag-text: #e5e7eb;
+    --tag-venue-bg: #083344;
+    --tag-venue-text: #67e8f9;
+    --tag-topic-bg: #1e1b4b;
+    --tag-topic-text: #c7d2fe;
+    --tag-status-bg: #3a1f0a;
+    --tag-status-text: #fdba74;
+
+    --btn-bg: #1f2a3a;
+    --btn-text: #e5e7eb;
+    --btn-border: #39485f;
+    --btn-hover-bg: #e5e7eb;
+    --btn-hover-text: #0b1220;
+    --btn-hover-border: #e5e7eb;
+
+    --link: #5eead4;
+  }
+
+  /* ===== Layout ===== */
+  .pubs { max-width: 980px; margin: 0 auto; padding: 0; background: var(--pub-bg); }
+  .pubs .note { color: var(--pub-muted); margin: 0 0 14px; }
+  .pubs h3 { font-size: 1.25rem; margin: 18px 0 10px; color: var(--pub-text); }
+
+  /* list style (no numbering) */
+  .pubs ul { list-style: none; margin: 0; padding: 0; }
+
+  /* Card blocks per paper */
+  .pubs .pub-list li{
+    margin: 10px 0;
+    padding: 12px 14px;
+    border: 1px solid rgba(17, 24, 39, 0.10);   /* softer border */
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.72);      /* translucent, blends with page bg */
+    backdrop-filter: blur(6px);                  /* optional, looks nicer */
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+
+  .pubs .pub-list li:hover{
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-1px);
+    transition: box-shadow .18s ease, transform .18s ease;
+  }
+
+  .pubs .title { font-weight: 400; } /* not bold */
+  .pubs .venue { font-style: italic; color: var(--pub-muted); }
+  .pubs .meta { color: var(--pub-muted); }
+
+  .pubs a { text-decoration: none; color: var(--link); }
+  .pubs a:hover { text-decoration: underline; }
+
+  /* Tags */
+  .pubs .tags { display: inline-flex; flex-wrap: wrap; gap: 6px; margin-left: 8px; vertical-align: middle; }
+  .pubs .tag { font-size: 0.82rem; padding: 2px 8px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
+  .pubs .tag.venue { background: var(--tag-venue-bg); color: var(--tag-venue-text); font-style: normal; }
+  .pubs .tag.topic { background: var(--tag-topic-bg); color: var(--tag-topic-text); }
+  .pubs .tag.status { background: var(--tag-status-bg); color: var(--tag-status-text); }
+
+  /* Link as button */
+.pubs a.pub-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  margin-left: 8px;
+  border-radius: 999px;                 /* pill 更像按钮 */
+  border: 1.5px solid var(--btn-border);/* 更显眼 */
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 0.88rem;
+  line-height: 1;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  text-decoration: none !important;
+}
+
+.pubs a.pub-link:hover{
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-border);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+
+/* Put this at the VERY END of the page <style> */
+.pubs .pub-list li{
+  background: transparent !important;                 /* == page background */
+  border: 1px solid rgba(17, 24, 39, 0.10) !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03) !important;
+}
+
+/* Dark mode: keep border visible */
+@media (prefers-color-scheme: dark){
+  .pubs .pub-list li{
+    border-color: rgba(229, 231, 235, 0.14) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.35) !important;
+  }
+}
+html[data-theme="dark"] .pubs .pub-list li,
+html.dark .pubs .pub-list li,
+body.dark .pubs .pub-list li{
+  border-color: rgba(229, 231, 235, 0.14) !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.35) !important;
+}
+
+
+
+/* ===== Flat, minimal list (overrides cards) ===== */
+.pubs a{ color: var(--global-link-color); }
+.pubs br + br{ display: none; }
+.pubs .pub-list li{
+  background: var(--global-bg-color) !important;
+  border: 1px solid var(--global-border-color) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
+  margin: 0 0 12px !important;
+  padding: 12px 16px !important;
+  transition: border-color .15s ease;
+}
+.pubs .pub-list li:hover{ border-color: var(--global-dark-border-color) !important; box-shadow: none !important; transform: none !important; }
+.pubs h3{ font-size: 1.02rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+.pubs .title{ font-weight: 600; color: var(--global-text-color); }
+.pubs .meta{ color: var(--global-text-color-light); }
+.pubs .tag{
+  border: 0 !important; border-radius: 4px; padding: 1px 8px; font-size: 0.8rem; font-weight: 600;
+  background: #eef0f2 !important; color: #444 !important;
+}
+.pubs .tag.venue{ background: #e3edfb !important; color: #14498f !important; }
+.pubs .tag.topic{ background: #e3f3ea !important; color: #17663a !important; }
+.pubs .tag.status{ background: #fdf0d9 !important; color: #8a5300 !important; }
+html[data-theme="dark"] .pubs .tag{ background: #2a2f36 !important; color: #d0d4d9 !important; }
+html[data-theme="dark"] .pubs .tag.venue{ background: #1d3350 !important; color: #a9c9f2 !important; }
+html[data-theme="dark"] .pubs .tag.topic{ background: #1a3a2a !important; color: #9bdcb5 !important; }
+html[data-theme="dark"] .pubs .tag.status{ background: #3d2f14 !important; color: #f0c880 !important; }
+.pubs a.pub-link{
+  padding: 0 7px; margin-left: 6px; border-radius: 3px;
+  background: transparent; box-shadow: none;
+  font-size: 0.8rem; font-weight: 500; line-height: 1.6;
+  border: 1px solid var(--global-dark-border-color);
+  color: var(--global-link-color);
+}
+.pubs a.pub-link:hover{ background: var(--global-link-color); color: #fff; border-color: var(--global-link-color); }
+
+/* ===== Compact cards ===== */
+.pubs .pub-list li{
+  margin: 0 0 12px !important;
+  padding: 11px 16px !important;
+  line-height: 1.55 !important;
+  border-radius: 8px !important;
+}
+.pubs .title{ font-size: 0.97rem; }
+.pubs .meta{ font-size: 0.88rem; }
+.pubs .tags{ margin-left: 6px !important; gap: 4px !important; }
+.pubs .tag{ padding: 0 6px !important; font-size: 0.72rem !important; line-height: 1.5; }
+.pubs a.pub-link{ font-size: 0.74rem !important; line-height: 1.45 !important; padding: 0 6px !important; }
+.pubs .pub-list li > .venue{ display: none; }
+.pubs h3{ margin: 1.5em 0 0.6em !important; }
+.pubs > br, .pubs ul + br{ display: none; }
+
+/* Match the selected site theme. */
+.pubs h3 { color: var(--global-text-color); }

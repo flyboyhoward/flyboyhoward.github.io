@@ -1,0 +1,120 @@
+- name: "Preprints"
+  papers:
+    - id: skill-slm
+      title: "Skill-SLM: Agent Skill-driven Small Language Models for Reliable Robot Operation"
+      authors:
+        - Wenhao Wang
+        - Yanyan Li
+        - Jiawei Yuan
+      year: 2026
+      category: preprint
+      topic: "Robot skills"
+      venue: "arXiv preprint, arXiv:2610.10812"
+      venue_tag: arXiv
+      url: https://arxiv.org/abs/2610.10812
+      pdf_url: https://arxiv.org/pdf/2610.10812
+      summary: "Uses task decomposition and skill composition to improve small language models' reliability and generalization in robot operation."
+      sources:
+        - https://arxiv.org/abs/2610.10812
+        - https://arxiv.org/html/2610.10812v1
+
+- name: "Conferences"
+  papers:
+    - id: ro-slm
+      title: "Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation"
+      authors:
+        - Wenhao Wang
+        - Yanyan Li
+        - Long Jiao
+        - Jiawei Yuan
+      year: 2026
+      category: conference
+      topic: "Onboard language models"
+      venue: "Findings of the Association for Computational Linguistics: ACL 2026, pp. 34436–34460"
+      venue_tag: Findings of ACL
+      url: https://aclanthology.org/2026.findings-acl.1720/
+      pdf_url: https://aclanthology.org/2026.findings-acl.1720.pdf
+      code_url: https://github.com/ai-uavsec/Ro-SLM
+      summary: "Distills language-model knowledge into small models for onboard robot task planning and operation code generation."
+      sources:
+        - https://aclanthology.org/2026.findings-acl.1720/
+        - https://github.com/ai-uavsec/Ro-SLM
+
+    - id: static-simulation
+      title: "LLM-Driven Corrective Robot Operation Code Generation with Static Text-Based Simulation"
+      authors:
+        - Wenhao Wang
+        - Yi Rong
+        - Yanyan Li
+        - Long Jiao
+        - Jiawei Yuan
+      year: 2026
+      category: conference
+      topic: "Robot code generation"
+      venue: "IEEE International Conference on Robotics and Automation (ICRA), pp. 13716–13723"
+      venue_tag: ICRA
+      url: https://doi.org/10.1109/ICRA57385.2026.11696332
+      pdf_url: https://arxiv.org/pdf/2512.02002
+      code_url: https://github.com/ai-uavsec/LLM-Driven-Static-Simulation
+      summary: "Uses LLM-based static simulation to evaluate and refine robot operation code without executing it in a physical or dynamic simulation environment."
+      sources:
+        - https://arxiv.org/abs/2512.02002
+        - https://github.com/ai-uavsec/LLM-Driven-Static-Simulation
+
+    - id: gsce
+      title: "GSCE: A Prompt Framework with Enhanced Reasoning for Reliable LLM-driven Drone Control"
+      authors:
+        - Wenhao Wang
+        - Yanyan Li
+        - Long Jiao
+        - Jiawei Yuan
+      year: 2025
+      category: conference
+      topic: "Reliable drone control"
+      venue: "International Conference on Unmanned Aircraft Systems (ICUAS), pp. 441–448"
+      venue_tag: ICUAS
+      url: https://doi.org/10.1109/ICUAS65942.2025.11007864
+      pdf_url: https://arxiv.org/pdf/2502.12531
+      code_url: https://github.com/flyboyhoward/ICUAS2025-GSCE
+      summary: "Combines guidelines, skill APIs, constraints, and examples to improve reliable, constraint-compliant code generation for drone control."
+      sources:
+        - https://arxiv.org/abs/2502.12531
+        - https://github.com/flyboyhoward/ICUAS2025-GSCE
+
+- name: "Journals"
+  papers:
+    - id: reliability-risk
+      title: "Reliability Risk in LLM-Driven Robotic Control"
+      authors:
+        - Yi Rong
+        - Wenhao Wang
+        - Jiawei Yuan
+      year: 2026
+      category: journal
+      topic: "Robot security"
+      venue: "IEEE Reliability Magazine, vol. 3, no. 2"
+      venue_tag: IEEE Reliability Magazine
+      url: https://ai-uavsec.github.io/
+      summary: "Examines reliability risks in robotic control systems driven by large language models."
+      sources:
+        - https://ai-uavsec.github.io/
+
+    - id: closed-loop-uav
+      title: "Large Language Model-Driven Closed-Loop UAV Operation With Semantic Observations"
+      authors:
+        - Wenhao Wang
+        - Yanyan Li
+        - Long Jiao
+        - Jiawei Yuan
+      year: 2026
+      category: journal
+      topic: "Closed-loop UAV control"
+      venue: "IEEE Internet of Things Journal, vol. 13, no. 7, pp. 14465–14476"
+      venue_tag: IEEE Internet of Things Journal
+      url: https://doi.org/10.1109/JIOT.2025.3649376
+      pdf_url: https://arxiv.org/pdf/2507.01930
+      code_url: https://github.com/ai-uavsec/CLGSCE
+      summary: "Converts UAV state observations into semantic trajectory descriptions to support feedback and iterative refinement of generated operation code."
+      sources:
+        - https://arxiv.org/abs/2507.01930
+        - https://github.com/ai-uavsec/CLGSCE

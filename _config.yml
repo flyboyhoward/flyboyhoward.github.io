@@ -1,0 +1,90 @@
+# Personal settings for Wenhao Wang's Academic Pages website.
+locale: en-US
+site_theme: mint
+title: Wenhao Wang
+title_separator: "|"
+name: Wenhao Wang
+description: "Wenhao Wang is a Ph.D. student in Computer Science at UMass Dartmouth researching reliable language-model-driven robotics and autonomous UAVs."
+url: "https://flyboyhoward.github.io"
+baseurl: ""
+repository: "flyboyhoward/flyboyhoward.github.io"
+timezone: America/New_York
+
+author:
+  name: Wenhao Wang
+  avatar: profile-placeholder.svg # Change to profile.jpg after adding your portrait.
+  bio: "Ph.D. Student in Computer Science"
+  employer: "UMass Dartmouth"
+  location: "North Dartmouth, MA, USA"
+  email: "wwang5@umassd.edu"
+  cv: # Set to /files/cv.pdf after replacing the empty PDF.
+  googlescholar: "https://scholar.google.com/citations?user=HKYbzHoAAAAJ&hl=en"
+  github: flyboyhoward
+
+social:
+  type: Person
+  name: Wenhao Wang
+  links:
+    - "https://scholar.google.com/citations?user=HKYbzHoAAAAJ&hl=en"
+    - "https://github.com/flyboyhoward"
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+sass:
+  sass_dir: _sass
+  style: compressed
+
+include:
+  - _pages
+exclude:
+  - _archive
+  - _recovery_backup
+  - _site
+  - node_modules
+  - faculty_application
+  - README.md
+  - MISSING_CONTENT.md
+  - CONTENT_SOURCES.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .github
+  - .codex
+  - .agents
+  - .aws
+  - .gitignore
+  - scripts
+  - tmp
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      share: false
+      read_time: false
+
+breadcrumbs: false
+atom_feed:
+  hide: true
+comments:
+  provider: false
+analytics:
+  provider: false
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

@@ -1,0 +1,6 @@
+{% for item in include.entries %}
+<div class="entry compact">
+  <div class="when">{{ item.date | escape }}</div>
+  <div class="what">{{ item.text | markdownify }}</div>
+</div>
+{% endfor %}

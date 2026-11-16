@@ -1,0 +1,7 @@
+{% assign items = site.data.news %}
+{% if items.size > 0 %}
+  {% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
+  {% include timeline-entries.html entries=items %}
+{% else %}
+  <p class="empty-note">Updates will be added here.</p>
+{% endif %}

@@ -1,0 +1,20 @@
+- institution: University of Massachusetts Dartmouth
+  url: https://www.umassd.edu/
+  degree: Ph.D. in Computer Science
+  department: Department of Computer & Information Science
+  date: Jan 2024 – Present
+  location: North Dartmouth, MA, USA
+  current: true
+  note: "Expected graduation: May 2027"
+- institution: University of Southampton
+  url: https://www.southampton.ac.uk/
+  degree: M.Sc. in System, Control and Signal Processing
+  department: School of Electronics and Computer Science
+  date: Sep 2018 – Sep 2019
+  location: Southampton, UK
+- institution: Shandong University
+  url: https://www.en.sdu.edu.cn/
+  degree: B.Eng. in Automation
+  department: School of Control Science and Engineering
+  date: Sep 2014 – Jun 2018
+  location: Jinan, China

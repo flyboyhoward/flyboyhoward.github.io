@@ -1,0 +1,23 @@
+<div class="pubs">
+  {% for group in site.data.publications %}
+  <h3>{{ group.name | escape }}</h3>
+  <ul class="pub-list">
+    {% for paper in group.papers %}
+    <li>
+      <a class="title" href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>
+      <span class="tags">
+        {% if paper.topic %}<span class="tag topic">{{ paper.topic | escape }}</span>{% endif %}
+        {% if paper.venue_tag %}<span class="tag venue">{{ paper.venue_tag | escape }}{% assign publication_year = paper.year | append: '' %}{% if publication_year != '' %}{% unless paper.venue_tag contains publication_year %} {{ publication_year }}{% endunless %}{% endif %}</span>{% endif %}
+      </span><br>
+      <span class="meta">{% for author in paper.authors %}{% if author == site.author.name %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</span>
+      <span class="publication-links">
+        <a class="pub-link" href="{{ paper.url | escape }}" aria-label="Read {{ paper.title | escape }}">Paper</a>
+        {% if paper.pdf_url %}<a class="pub-link" href="{{ paper.pdf_url | escape }}" aria-label="PDF of {{ paper.title | escape }}">PDF</a>{% endif %}
+        {% if paper.code_url %}<a class="pub-link" href="{{ paper.code_url | escape }}" aria-label="Code for {{ paper.title | escape }}">Code</a>{% endif %}
+      </span>
+      <span class="visually-hidden">{{ paper.venue | escape }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>

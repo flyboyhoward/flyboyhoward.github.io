@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+/vendor/
+tmp/
+*.log
+# Local application materials are not part of the website.
+faculty_application/
+_archive/
+_recovery_backup/

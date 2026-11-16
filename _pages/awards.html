@@ -1,0 +1,9 @@
+---
+title: Awards
+permalink: /awards/
+---
+{% if site.data.awards.size > 0 %}
+{% include timeline-entries.html entries=site.data.awards %}
+{% else %}
+<p class="empty-note">Awards and honors will be added here.</p>
+{% endif %}
