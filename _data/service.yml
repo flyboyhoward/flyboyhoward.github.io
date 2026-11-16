@@ -15,7 +15,6 @@
   #     text: "Student name, [Thesis title](https://example.com)."
 
 - heading: "Leadership"
-  entries: []
-  # Replace [] with entries such as:
-  #   - date: "YYYY–YYYY"
-  #     text: "Role, organization."
+  entries:
+    - date: "2016–2017"
+      text: "President, UAV Club, Shandong University"
