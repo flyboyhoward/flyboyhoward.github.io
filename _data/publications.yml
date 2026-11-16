@@ -31,7 +31,7 @@
       category: conference
       topic: "Onboard language models"
       venue: "Findings of the Association for Computational Linguistics: ACL 2026, pp. 34436–34460"
-      venue_tag: Findings of ACL
+      venue_tag: ACL
       url: https://aclanthology.org/2026.findings-acl.1720/
       pdf_url: https://aclanthology.org/2026.findings-acl.1720.pdf
       code_url: https://github.com/ai-uavsec/Ro-SLM
