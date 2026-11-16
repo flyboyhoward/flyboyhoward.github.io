@@ -1,0 +1,13 @@
+{% for section in site.data.service %}
+<h2>{{ section.heading | escape }}</h2>
+{% if section.entries.size > 0 %}
+  {% for item in section.entries %}
+  <div class="entry compact">
+    <div class="when">{{ item.date | escape }}</div>
+    <div class="what">{% if item.text != empty and item.text %}{{ item.text | markdownify }}{% else %}<p class="empty-note">Details to be added.</p>{% endif %}</div>
+  </div>
+  {% endfor %}
+{% else %}
+<p class="empty-note">Details to be added.</p>
+{% endif %}
+{% endfor %}

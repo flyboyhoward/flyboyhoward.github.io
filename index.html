@@ -59,13 +59,7 @@ redirect_from:
 
 <details class="fold" id="service" open>
   <summary>📚 Service</summary>
-  {% if site.data.service.size > 0 %}
-    {% assign service_items = site.data.service | slice: 0, 5 %}
-    {% include timeline-entries.html entries=service_items %}
-    {% if site.data.service.size > 5 %}<p class="all-entries"><a href="{{ '/service/' | relative_url }}">All service activities →</a></p>{% endif %}
-  {% else %}
-    <p class="empty-note">Service information will be added here.</p>
-  {% endif %}
+  {% include service-entries.html %}
 </details>
 
 <details class="fold" id="publications" open>
