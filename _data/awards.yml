@@ -1,4 +1,13 @@
 - heading: "Honors & scholarships"
   entries:
     - date: "2025"
-      text: "Graduate Research Award"
+      text: "Graduate Research Award, Department of Computer & Information Science, UMass Dartmouth"
+
+- heading: "Competitions"
+  entries:
+    - date: "2017"
+      text: "First Prize, Quadcopter Category, China Engineering Robot Competition and International Open"
+    - date: "2016"
+      text: "Champion, Quadcopter Category, China Engineering Robot Competition and International Open"
+    - date: "2016"
+      text: "First Prize, Hexacopter Category, China Engineering Robot Competition and International Open"
