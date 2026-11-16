@@ -3,7 +3,18 @@ title: Awards
 permalink: /awards/
 ---
 {% if site.data.awards.size > 0 %}
+{% if site.data.awards.first.heading %}
+{% for section in site.data.awards %}
+<h2>{{ section.heading | escape }}</h2>
+{% if section.entries.size > 0 %}
+{% include timeline-entries.html entries=section.entries %}
+{% else %}
+<p class="empty-note">Awards and honors will be added here.</p>
+{% endif %}
+{% endfor %}
+{% else %}
 {% include timeline-entries.html entries=site.data.awards %}
+{% endif %}
 {% else %}
 <p class="empty-note">Awards and honors will be added here.</p>
 {% endif %}

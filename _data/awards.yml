@@ -1,2 +1,4 @@
-- date: "2025"
-  text: "Graduate Research Award"
+- heading: "Honors & scholarships"
+  entries:
+    - date: "2025"
+      text: "Graduate Research Award"
