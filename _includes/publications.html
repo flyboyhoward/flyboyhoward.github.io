@@ -12,7 +12,6 @@
       <span class="meta">{% for author in paper.authors %}{% if author == site.author.name %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</span>
       <span class="publication-links">
         <a class="pub-link" href="{{ paper.url | escape }}" aria-label="Read {{ paper.title | escape }}">Paper</a>
-        {% if paper.pdf_url %}<a class="pub-link" href="{{ paper.pdf_url | escape }}" aria-label="PDF of {{ paper.title | escape }}">PDF</a>{% endif %}
         {% if paper.code_url %}<a class="pub-link" href="{{ paper.code_url | escape }}" aria-label="Code for {{ paper.title | escape }}">Code</a>{% endif %}
       </span>
       <span class="visually-hidden">{{ paper.venue | escape }}</span>
