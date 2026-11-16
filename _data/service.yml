@@ -2,19 +2,19 @@
 - heading: "Academic service"
   entries:
     - date: "Reviewer"
-      text: ""
-    - date: "Tutorial"
-      text: ""
+      text: "NeruIPS, AAAI, ICC, IEEE Transactions on Industrial Informatics, IEEE Internet of Things Journal "
+    # - date: "Tutorial"
+    #   text: ""
     - date: "Teaching assistant"
-      text: "CIS 570 — Advanced Computer Systems, University of Massachusetts Dartmouth. Instructor: Dr. Adnan El-Nasan."
+      text: "CIS 570 — Advanced Computer Systems(2026)"
 
-- heading: "Supervised MSc theses"
-  entries: []
+# - heading: "Supervised MSc theses"
+#   entries: []
   # Replace [] with entries such as:
   #   - date: "Month YYYY"
   #     text: "Student name, [Thesis title](https://example.com)."
 
 - heading: "Leadership"
   entries:
-    - date: "2016–2017"
+    - date: "2015–2017"
       text: "President, UAV Club, Shandong University"

@@ -8,7 +8,7 @@
         - Jiawei Yuan
       year: 2026
       category: preprint
-      topic: "Robot skills"
+      topic: "Generalizable onboard language models"
       venue: "arXiv preprint, arXiv:2610.10812"
       venue_tag: arXiv
       url: https://arxiv.org/abs/2610.10812
@@ -29,7 +29,7 @@
         - Jiawei Yuan
       year: 2026
       category: conference
-      topic: "Onboard language models"
+      topic: "Onboard language models driven robotics"
       venue: "Findings of the Association for Computational Linguistics: ACL 2026, pp. 34436–34460"
       venue_tag: ACL
       url: https://aclanthology.org/2026.findings-acl.1720/
@@ -50,7 +50,7 @@
         - Jiawei Yuan
       year: 2026
       category: conference
-      topic: "Robot code generation"
+      topic: "LLM-driven robots"
       venue: "IEEE International Conference on Robotics and Automation (ICRA), pp. 13716–13723"
       venue_tag: ICRA
       url: https://doi.org/10.1109/ICRA57385.2026.11696332
@@ -70,7 +70,7 @@
         - Jiawei Yuan
       year: 2025
       category: conference
-      topic: "Reliable drone control"
+      topic: "Reliable LLM-driven UAV"
       venue: "International Conference on Unmanned Aircraft Systems (ICUAS), pp. 441–448"
       venue_tag: ICUAS
       url: https://doi.org/10.1109/ICUAS65942.2025.11007864
@@ -91,7 +91,7 @@
         - Jiawei Yuan
       year: 2026
       category: journal
-      topic: "Robot security"
+      topic: "LLM-driven Robot security"
       venue: "IEEE Reliability Magazine, vol. 3, no. 2"
       venue_tag: IEEE Reliability Magazine
       url: https://ai-uavsec.github.io/
@@ -108,7 +108,7 @@
         - Jiawei Yuan
       year: 2026
       category: journal
-      topic: "Closed-loop UAV control"
+      topic: "Closed-loop LLM-driven UAV"
       venue: "IEEE Internet of Things Journal, vol. 13, no. 7, pp. 14465–14476"
       venue_tag: IEEE Internet of Things Journal
       url: https://doi.org/10.1109/JIOT.2025.3649376
