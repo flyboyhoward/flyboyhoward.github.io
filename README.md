@@ -21,6 +21,5 @@ Commit and push these files to `flyboyhoward/flyboyhoward.github.io`. In the rep
 - Ro-SLM: https://arxiv.org/abs/2604.10929
 - GSCE: https://arxiv.org/abs/2502.12531
 - Closed-loop UAV operation: https://arxiv.org/abs/2507.01930
-- Layout inspiration: https://reedzyd.github.io/; implementation is original.
 
 Publication entries are maintained manually. Add new work under the appropriate publication group and update the footer year when needed.
