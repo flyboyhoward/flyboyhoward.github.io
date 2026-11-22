@@ -83,22 +83,6 @@
 
 - name: "Journals"
   papers:
-    - id: reliability-risk
-      title: "Reliability Risk in LLM-Driven Robotic Control"
-      authors:
-        - Yi Rong
-        - Wenhao Wang
-        - Jiawei Yuan
-      year: 2026
-      category: journal
-      topic: "LLM-driven Robot security"
-      venue: "IEEE Reliability Magazine, vol. 3, no. 2"
-      venue_tag: IEEE Reliability Magazine
-      url: https://ai-uavsec.github.io/
-      summary: "Examines reliability risks in robotic control systems driven by large language models."
-      sources:
-        - https://ai-uavsec.github.io/
-
     - id: closed-loop-uav
       title: "Large Language Model-Driven Closed-Loop UAV Operation With Semantic Observations"
       authors:
@@ -118,3 +102,20 @@
       sources:
         - https://arxiv.org/abs/2507.01930
         - https://github.com/ai-uavsec/CLGSCE
+
+    - id: reliability-risk
+      title: "Reliability Risk in LLM-Driven Robotic Control"
+      authors:
+        - Yi Rong
+        - Wenhao Wang
+        - Jiawei Yuan
+      year: 2026
+      category: journal
+      topic: "LLM-driven Robot security"
+      venue: "IEEE Reliability Magazine, vol. 3, no. 2"
+      venue_tag: IEEE Reliability Magazine
+      url: https://doi.org/10.1109/MRL.2026.3686345
+      pdf_rul: https://doi.org/10.1109/MRL.2026.3686345
+      summary: "Examines reliability risks in robotic control systems driven by large language models."
+      sources:
+        - https://ai-uavsec.github.io/
